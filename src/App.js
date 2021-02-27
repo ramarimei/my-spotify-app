@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
 
-let textColor = '#fff';
+let defaultTextColor = '#fff';
 
 class Aggregate extends Component {
   render() {
     return (
-      <div>
-        <h2>Number Text</h2>
+      <div style={{width: "40%", display: 'inline-block'}}>
+        <h2 style={{color: defaultTextColor}}>Number Text</h2>
       </div>
     );
   }
@@ -16,7 +16,7 @@ class Aggregate extends Component {
 class Filter extends Component{
   render (){
     return (
-        <div>
+        <div style={{color: defaultTextColor}}>
           <img/>
         <input type="text"/>
         Filter
