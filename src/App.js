@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import "./App.css";
 
 let defaultTextColor = "#fff";
+let defaultStyle = {
+color: defaultTextColor
+
+};
 
 class Aggregate extends Component {
   render() {
     return (
-      <div style={{ width: "40%", display: "inline-block" }}>
+      <div style={{...defaultStyle, width: "40%", display: "inline-block" }}>
         <h2 style={{ color: defaultTextColor }}>Number Text</h2>
       </div>
     );
@@ -16,7 +20,7 @@ class Aggregate extends Component {
 class Filter extends Component {
   render() {
     return (
-      <div style={{ color: defaultTextColor }}>
+      <div style={defaultStyle}>
         <img />
         <input type="text" />
         <img />
@@ -27,7 +31,7 @@ class Filter extends Component {
 class PlayList extends Component {
   render() {
     return (
-      <div style={{ color: defaultTextColor }}>
+      <div style={{...defaultStyle, display: "inline-block", width: "25%" }}>
         <img />
         <h3>PlayList Name</h3>
         <ul>
@@ -47,7 +51,12 @@ class App extends Component {
         <h1>Title</h1>
         <Aggregate /> <Aggregate />
         <Filter />
-        <PlayList />
+        <PlayList/>
+        <PlayList/>
+        <PlayList/>
+        <PlayList/>
+
+
       </div>
     );
   }
