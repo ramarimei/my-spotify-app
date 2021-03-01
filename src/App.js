@@ -9,7 +9,7 @@ color: defaultTextColor
 let fakeServerData = {
 
   user: {
-    name: 'David'
+    name: 'Ramari'
   }
 };
 
